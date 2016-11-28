@@ -1,0 +1,28 @@
+@CHARSET "ISO-8859-1";
+
+/* #navwrapper{ */
+/* 	background-color: #4e5159; */
+/*     height: 100%; */
+/*     position: fixed; */
+/*     margin-top: 100px; */
+		
+/* } */
+
+.wrapper {
+	background-color: #4e5159;
+	width: 500px;
+	margin: 0 auto
+}
+
+.header{
+	text-align: centered
+}
+
+.loginview{
+	width: 400px;
+	margin: 0 auto;
+}
+
+.submit {
+	text-align: center;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<h:outputStylesheet library="css" name="/style.css" />
+	<title>Insert title here</title>
+</h:head>
+<body>
+	<div class="loginview">
+		<h:form>
+			<h:panelGrid columns="2" id="matchGrid" cellpadding="5">
+				<h:outputLabel for="login" value="Login : *" />
+				<p:inputText id="login" value="#{userController.login}"
+					label="login" required="true" />
+
+				<h:outputLabel for="pwd" value="Password : *" />
+				<p:password id="pwd" value="#{userController.password}"
+					label="Password 1" required="true" />
+			</h:panelGrid>
+			<div class="submit">
+				<p:commandButton action="#{userController.checkUser}" value="Login" />
+			</div>
+		</h:form>
+	</div>
+</body>
+</html>
